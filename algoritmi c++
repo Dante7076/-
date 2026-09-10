@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int points;
+
+    cout << "Введіть кількість балів: ";
+    cin >> points;
+
+    if (points >= 90 && points <= 100) {
+        cout << "Оцінка ECTS: A" << endl;
+        cout << "Результат: Відмінно" << endl;
+    }
+    else if (points >= 82) {
+        cout << "Оцінка ECTS: B" << endl;
+        cout << "Результат: Дуже добре" << endl;
+    }
+    else if (points >= 75) {
+        cout << "Оцінка ECTS: C" << endl;
+        cout << "Результат: Добре" << endl;
+    }
+    else if (points >= 69) {
+        cout << "Оцінка ECTS: D" << endl;
+        cout << "Результат: Задовільно" << endl;
+    }
+    else if (points >= 60) {
+        cout << "Оцінка ECTS: E" << endl;
+        cout << "Результат: Достатньо" << endl;
+    }
+    else if (points >= 35) {
+        cout << "Оцінка ECTS: FX" << endl;
+        cout << "Результат: Незадовільно, але можливе повторне складання" << endl;
+    }
+    else if (points >= 0) {
+        cout << "Оцінка ECTS: F" << endl;
+        cout << "Результат: Незадовільно" << endl;
+    }
+    else {
+        cout << "Помилка: кількість балів повинна бути від 0 до 100." << endl;
+    }
+    return 0;
+}
